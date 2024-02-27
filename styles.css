@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Karla, sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 4rem auto;
+    width: 350px;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.title {
+    font-size: 30px;
+}
+
+#counter {
+    font-size: 150px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.footer {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: auto;
+}
