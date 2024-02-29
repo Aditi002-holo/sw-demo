@@ -56,4 +56,5 @@ self.addEventListener('fetch', e => {
     )
 })
 
+
 // Push Notification

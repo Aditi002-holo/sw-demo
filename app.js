@@ -17,3 +17,21 @@ if('serviceWorker' in navigator) {
             .catch(err => console.log(`sw: error - ${err}`))
     })
 }
+
+// Notification with button
+
+const notifBtn = document.getElementById('notif-btn')
+
+notifBtn.addEventListener('click', () => {
+    Notification
+        .requestPermission()
+        .then(permission => {
+            if(permission === 'granted') {
+                new Notification("Example Notification", {
+                    body: 'Test Notification',
+                    data: {restimer: 'yee!'},
+                    icon: './file-code-solid.svg',
+                })
+            }
+        })
+})
