@@ -26,7 +26,7 @@ function notification(count) {
 
             setTimeout(() => {
                 noti.close()
-            }, 3000);
+            }, 2000);
         }
     })
 }
@@ -56,9 +56,7 @@ notifBtn.addEventListener('click', () => {
         .then(permission => {
             if(permission === 'granted') {
                 new Notification("Example Notification", {
-                    body: 'Test Notification',
-                    data: {restimer: 'yee!'},
-                    icon: './file-code-solid.svg',
+                    body: 'Test Notification'
                 })
             }
         })
